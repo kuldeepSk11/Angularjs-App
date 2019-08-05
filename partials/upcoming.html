@@ -1,0 +1,46 @@
+
+<div class="container-fluid" style="padding-top: 50px">
+	<div class="container" >
+	<div class="row">
+   		<div class="col-md-8 col-xs-12">
+   			 <h2>Upcoming Movies : </h2>
+   			 <br>
+<div class="card-main-box-set" ng-repeat="iteam in upcoming">
+	<div class="row">                
+	<div class="col-md-5 car-image-block">
+		<a href="#"><img ng-src="{{'http://image.tmdb.org/t/p/w500//' +iteam.poster_path}}"></a>
+	</div><!--car-image-block end here-->
+	<div class="col-md-7 card-p-set">
+		<h3>{{iteam.original_title}}</h3>
+			
+			<hr>
+			<div class="row">
+				<div class="col-md-6">Date:- {{iteam.release_date}}</div>
+				<div class="col-md-6">Vote:- {{iteam.vote_average}}</div>
+			</div>
+			<hr>
+		<p>{{iteam.overview | limitTo:120}}</p>
+		
+		 <a ui-sref="detail({id : iteam.id})" class="btn btn-outline-danger"> View Datails</a>
+		
+	</div><!--card-p-set end here-->
+          </div>                   
+        </div><!--card-main-box-set end here-->
+          
+
+   			
+   		</div><!--col-md-8 col-xs-12 end here-->
+   		
+   		
+   		
+   		<div class="col-md-4 d-none d-sm-block">
+   			
+   			medai use
+   		</div><!--col-md-4 d-none d-sm-block end here-->
+   		
+   		
+   	</div>
+    
+   
+    </div><!--container end here-->
+</div><!--container-fluid end here--->

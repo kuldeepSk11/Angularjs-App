@@ -1,0 +1,75 @@
+<div class="image-dt-bg">
+
+	<img ng-hide="movieDetails.backdrop_path == null" class="img-responsive" ng-src="{{'http://image.tmdb.org/t/p/original/' +movieDetails.backdrop_path}}">
+	
+	<img ng-show="movieDetails.backdrop_path == null" class="img-responsive" src="./publics/images/default-img.jpg">
+	
+	
+	      
+</div><!--image-dt-bg endhere-->
+        
+       <div class="clearfix"></div> 
+        <br>
+        
+    <div class="container single-detail" ng-controller="movieDetialController">
+        
+	<div class="row">
+	
+		<div class="col-md-12">
+			
+			<h2>{{movieDetails.title}} ({{movieDetails.release_date | date:'yyyy'}})</h2>
+
+			<div class="row">
+				<div class="col-md-6">
+					<p><b>Date :-</b>{{movieDetails.release_date}}</p>
+					<p><b>Popularity :-</b> {{movieDetails.popularity}}</p>
+					<p><b>Rating :-</b> {{movieDetails.vote_average}}</p>
+				</div><!--col-md-6 end here-->
+				
+				<div class="col-md-6">
+					<p><b>Vote :-</b> {{movieDetails.vote_count}}</p>
+				<p><b>Runtime :-</b> {{movieDetails.runtime}}</p>
+
+				</div><!--col-md-6 end here-->
+
+
+			</div><!--row end here-->
+
+			<p>
+				<b>Overview</b>
+				<br>
+				{{movieDetails.overview}}
+			</p>
+			<br>
+			<a ng-href="https://www.youtube.com/results?search_query={{ details.title }}" target="_blank" class="btn btn-default btn-xs btn-info">Watch Trailers!</a>
+			<br>
+			 <div class="clearfix"></div>
+		</div><!--col-md-12 end here-->
+    
+    
+    <div class="clearfix"></div>
+    <br>
+    
+	
+		<section class="col-md-12 cast-main">
+			<h2 ng-if ="costarDetails.cast.length == 0" style="padding-left: 30px;color: #ffffff">Cast not available</h2>
+			<hr>
+    <br>
+			<h2>Top Billed Cast</h2>
+			<ul  class="cast-main-people" >
+				<li ng-repeat="x in costarDetails.cast | limitTo:7">
+					 <figure >
+						<img ng-hide="movieDetails.profile_path != null" class="img-circle" ng-src="{{'http://image.tmdb.org/t/p/w185//'+x.profile_path}}">
+					 
+					 	<img class="img-circle"  ng-show="movieDetails.profile_path == null" src="./publics/images/default-img.jpg">
+					 </figure>
+					<p><b>{{x.name}}</b></p>
+					<p>{{x.character}}</p>
+				</li>
+			</ul>
+		</section>
+		
+		
+	</div>                         
+	
+</div><!--container end here-->

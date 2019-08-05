@@ -1,0 +1,205 @@
+
+//team page css start here
+
+.she-team-title {
+    @include mar_pad_set($margin:0px,$padding:10px 10px 0px 20px);
+   }
+.she-team-title h2{text-align:$text-align-l;
+    font-size:$font-size-18!important;
+    @include mar_pad_set($margin:3px,$padding:0px);
+}
+
+.team_mName {
+    font-weight: $font-weight-bold;
+}
+
+.team_mdesignation {
+    font-weight: $font-weight-400;
+    font-size: $font-size-14;
+}
+.she-des-team{
+    @include mar_pad_set($margin:5px 0px,$padding:0px);
+    text-align: $text-align-c;
+    font-size: $font-size-18;
+}
+.she-des-team span{color:$bg-white!important;
+    font-size:$font-size-16!important;
+    text-align:$text-align-c!important;}
+.she-fot-team{
+    @include mar_pad_set($margin:0px,$padding:0px);
+    display: $display-block;}
+
+.she-fot-team a{border-radius:50%;
+    @include mar_pad_set($margin:0px 0px 10px 0px,$padding:0px);
+    color:$bg-white;font-size: $font-size-16;
+    @include width_height_set(35px,$height:35px);
+    text-align: $text-align-c;
+    line-height: $text-line-height-34;
+    display:$display-in-block;
+}
+
+.team_twitter:hover{
+    background-color:#429cd6;
+    color:$bg-white;
+}
+
+.team_likndin:hover{background-color:#0d77b7;}
+.img-container:hover .img-caption{@include opacity_set(0);}
+.bottom-top{top: 100%;left: 0;}
+.img-container:hover .img-caption{
+    top:$top;
+    left:$left;
+    transition: all 0.6s ease-out;
+}
+.img-container:hover .img-caption {
+    @include opacity_set(1);
+    }
+.team_banner_sett01 {
+    margin:$margin-0;padding:$padding-0;position:$position-relative;
+}
+.teamSection01 {
+    @include mar_pad_set($margin:48px 0px 0px 0px,$padding:0px);
+    }
+
+.CoImage {
+    margin:$margin-0;padding:$padding-0;
+    position:$position-relative;
+    z-index: 1;
+    }
+.CoImage:before {
+    @include position_set(absolute);
+    @include top_set(20px);
+    @include right_set(-10px);
+    @include width_height_set(99%,$height:100%);
+    margin:$margin-0;padding:$padding-0;
+    content: "";
+    background:$greyshade-100;  
+    z-index: -1;
+}
+
+.coDetail {
+    @include mar_pad_set($margin:12% 0px 0px 0px,$padding:0px 0px 0px 60px);
+}
+
+.coDetailInner {
+    @include mar_pad_set($margin:0px,$padding:0px 0px 0px 20px);
+    border-left: 10px solid #dc4541;
+}
+
+.coDetail .co_bio {
+    font-size: $font-size-16;
+    color:$greyshade-600;
+    line-height: $text-line-height-23;
+    font-weight: $font-weight-400;
+}
+
+.coDetail .co_name {
+    @include mar_pad_set($margin:24 0px 0px 0px,$padding:0px);
+    font-size: $font-size-24;
+    text-transform: $text-transform;
+    font-weight: $font-weight-bold;
+}
+
+.coDetail .co_post {
+    @include mar_pad_set($margin:5px,$padding:0px);
+    font-size: $font-size-18;
+    font-weight: $font-weight-400;
+    text-transform: inherit;
+}
+
+.teamHeading{
+    text-align: $text-align-c;
+    padding:$padding-0;
+    font-size: $font-size-30;
+    font-weight: $font-weight-300;
+}
+
+.teamColsett {
+    @include mar_pad_set(0px,$padding:0px 20px);
+}
+.teamColsettInner {
+    margin-bottom: 60px;
+}
+
+.CoImage02 {
+    @include position_set(relative);
+    @include width_height_set(94%,$height:auto);
+    @include mar_pad_set(0px,0px);
+}
+
+.CoImage02:before {
+    @include mar_pad_set(0px,0px);
+    @include width_height_set(100%,100%);
+    @include position_set(absolute);
+    @include top_set(20px);
+    @include right_set(-20px);
+    background: $greyshade-100;
+    content: "";
+}
+
+.img-container {
+    @include mar_pad_set($margin:20px 0px,$padding:0px);
+    position: $position-relative;
+    overflow: $overflow-hidden;
+}
+
+.CoImage02 .teamImage {
+    max-height: 400px;
+    overflow: $overflow-hidden;
+}
+
+.img-caption {
+    @include box-sizing(border-box);
+    position: $position-absolute;
+    @include width_height_set(100%,100%);
+    padding: 16px;
+    background: rgba(203, 70, 66, 0.8);
+    color:$bg-white;
+    cursor: $cursor-p;
+    font-size: $font-size-13;
+    transition: all 0.8s ease-out;
+}
+.bottom-top {
+    top: 100%;
+    left: $left;
+}
+
+.caption_contentSett {
+    display: $display-flex;
+    align-items: $text-align-c;
+    justify-content: $justify-content-cen;
+    height: 100%;
+    max-height: 260px;
+    overflow-y: hidden;
+}
+.she-des-team {
+    @include mar_pad_set($margin:5px 0px,$padding:0px);
+    text-align: $text-align-c;
+    font-size: $font-size-16;
+}
+
+.she-des-team span {
+    color: $bg-white!important;
+    font-size: $font-size-16!important;
+    text-align: center!important;
+}
+
+.she-des-team span {
+    color: $bg-white!important;
+    font-size: $font-size-16!important;
+    text-align: $text-align-c!important;
+}
+
+.she-des-team span {color:$bg-white!important;font-size:$font-size-16!important;text-align:$text-align-c!important;}
+.she-fot-team {margin:$margin-0;padding:$padding-0;display: $display-block;}
+
+.she-fot-team a {
+    border-radius: $border-radius-50;
+    @include mar_pad_set($margin:0px 10px 0px 0px,$padding:0px);
+    color:$bg-white;
+    font-size: $font-size-16;
+    @include width_height_set(35px,35px);
+    text-align: $text-align-c;
+    line-height: $text-line-height-26;
+    display: $display-in-block;
+}

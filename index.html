@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" ng-app="angularApp">
+  <head>
+    <title>Angular JS</title>
+  	<base href="/angularjs-app/" />
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="./publics/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./publics/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./publics/css/sheroes-style.css">
+    <link rel="stylesheet" href="./publics/css/style-main.css">
+
+    <!--- all script add here-->
+    <script src="angular-js/jquery.min.js"></script>
+    <script src="angular-js/bootstrap.min.js" ></script>
+    <script src="angular-js/angular.min.js"></script>
+    <script src="angular-js/ng-infinite-scroll.min.js"></script>
+    <script src="angular-js/angular-animate.min.js" ></script>
+    <script src="angular-js/ui-bootstrap.min.js" ></script>
+    <script src="angular-js/angular-ui-router.min.js" ></script>
+    <script src="angular-js/angular-app.js" ></script>
+
+  <!--- all route add here-->
+    <script src="route/route.js" ></script>
+    
+  <!--- all services add here-->
+    <script src="services/services.js" ></script>
+    
+  <!--- all controllers add here-->
+    <script src="controllers/mainController.js" ></script>
+    <script src="controllers/carouselCtrl.js" ></script>
+    <script src="controllers/upcomingCtrl.js"></script>
+    <script src="controllers/searchCtrl.js"></script>
+    <script src="controllers/movieDetails.js"></script>
+    <script src="controllers/topRatedCtrl.js"></script>
+    <script src="controllers/popularCtrl.js"></script>
+    <script src="controllers/loginController.js"></script>
+    <script src="controllers/dashboardCtrl.js"></script>
+   
+   <!--- all factory js add here--> 
+    <script src="factory/moviesListFactory.js" ></script>
+    
+    <!--- all directives js add here--> 
+    <script src="directives/DirectivesAllData.js" ></script>
+    
+    <!--- all custom js add here--> 
+    
+<!--<script src="./publics/js/bundle.js"></script>-->
+ 
+  </head>
+  <body>
+
+  <div id="wrapper">
+    <!-- Include the header --> 
+    <div ng-include="'partials/header.html'" ></div> 
+        <!-- Dynamic load view --> 
+         <div ui-view></div>
+    <!-- Include the footer -->    
+    <div ng-include="'partials/footer.html'" ></div> 
+    
+  </div><!--wrapper end here-->
+  
+  </body>
+</html>

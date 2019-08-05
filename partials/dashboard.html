@@ -1,0 +1,119 @@
+<header class="dashboard-main-header" ng-controller="dashboardCtrl" data-ng-init="movieFetchData()">
+  <div class="container">
+       <br>
+    <h3>Welcome to Dashboard</h3>
+    <hr>
+    <div class="row">
+       <div class="container">
+       
+         <div class="d-flex flex-row mt-2">
+	<ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left" role="navigation">
+		<li class="nav-item">
+			<button href="#viewAllTab" class="nav-link active" data-toggle="tab" role="tab" aria-controls="view-all">View All</button>
+		</li>
+		<li class="nav-item">
+			<button href="#addPostTab" class="nav-link" data-toggle="tab" role="tab" aria-controls="add-post">Add Post</button>
+		</li>
+	</ul>
+	<div class="tab-content movie-data-content-box">
+		<div class="tab-pane fade show active" id="viewAllTab" role="tabpanel">
+
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                
+                <table class="responsive-table" >
+                        <thead>
+                          <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Release Date</th>
+                            <th scope="col">Rating</th>
+                            <th scope="col">Popularity</th>
+                            <th scope="col">Runtime</th>
+                            <th scope="col">Overview</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr ng-repeat="movieData in movieDataGet track by $index">
+                            <th scope="row">{{movieData.titile}}</th>
+                            <td data-title="Release Date">{{movieData.release_date}}</td>
+                            <td data-title="Rating">{{movieData.rating}}</td>
+                            <td data-title="Popularity" >{{movieData.popularity}}</td>
+                            <td data-title="Run time" >{{movieData.runtime}}</td>
+                            <td data-title="Overview">{{movieData.overview}}</td>
+                         <td data-title="Action">
+                                  <button class="btn btn-success" ng-click="movieViewData( movieData.id)" data-target="#movieDataView">view</button>
+                                  <button class="btn btn-info" ng-click="movieEditData(movieData.id)" data-target="#movieDataUpdate">Edit</button>
+                                  <button class="btn btn-danger" ng-click="deleteData(movieData.id)">delete</button>
+                              </td>
+                              
+                          </tr>
+
+                        </tbody>
+                      </table>
+                        </div>
+                      </div>
+                    </div>
+		</div><!--tab-pane end here-->
+		
+		<div class="tab-pane fade" id="addPostTab" role="tabpanel">
+			
+			<div class="movie-data-send-from">
+			        <form method="post">
+			            <fieldset>
+			                    <legend>Insert Movie the Data asfdasf</legend>
+                                
+                                    <p><strong>Titile</strong>
+                                        <br>
+                                         <input type="text" placeholder="" name="titile" ng-model="insertData.titile">	
+                                    </p>
+                                    
+                                    <p><strong>Release Date</strong>
+                                        <br>
+                                         <input type="date" placeholder="" name="" ng-model="insertData.release_date">	
+                                    </p>
+                                    
+                                    <p><strong>Rating</strong>
+                                        <br>
+                                         <input type="text" placeholder="" name="" ng-model="insertData.rating">	
+                                    </p> 
+                                                             
+                                     <p><strong>Popularity</strong>
+                                        <br>
+                                         <input type="text" placeholder="" name="" ng-model="insertData.popularity">	
+                                    </p>
+                                    
+                                    <p><strong>Runtime</strong>
+                                        <br>
+                                         <input type="text" placeholder="" name="" ng-model="insertData.runtime">	
+                                    </p>
+                                    
+                                    <p><strong>Overview</strong>
+                                        <br>
+                                         <textarea placeholder="" name="" ng-model="insertData.overview">
+                                             
+                                         </textarea>	
+                                    </p>                     
+                                    <hr>
+                                    <p>
+                                        <input type="submit" ng-click="movieInsertData()" value="submit" name="">
+                                         <input type="reset" value="reset" name="">
+                                    </p>   
+                                   	                    
+			            </fieldset>
+			        </form>
+			</div>
+			 
+		</div><!--tab-pane end here-->
+		
+		<div ng-include="'partials/updateData.html'" ></div>
+		<div ng-include="'partials/moiveDataView.html'" ></div>
+	</div><!--tab-content end here-->
+</div><!--d-flex flex-row end here-->
+
+        </div><!--container end here-->
+    </div><!--row endhere-->
+  </div><!--container endhere-->    
+</header><!--dashboard-main-header endhere--> 
+   

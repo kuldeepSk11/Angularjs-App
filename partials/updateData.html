@@ -1,0 +1,62 @@
+<!-- Modal -->
+<div class="modal fade" id="movieDataUpdate" role="dialog">
+    <div class="modal-dialog modal-md">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-center">Update Movie the Data</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+            <div class="movie-data-send-from">
+			        <form method="post">
+			            <fieldset>
+			                    
+                                    <p><strong>Titile</strong>
+                                        <br>
+                                         <input type="text" placeholder="" name="titile" ng-model="insertData.titile">	
+                                    </p>
+                                    
+                                    <p><strong>Release Date</strong>
+                                        <br>
+                                         <input type="date" placeholder="" name="" ng-model="insertData.release_date">	
+                                    </p>
+                                    
+                                    <p><strong>Rating</strong>
+                                        <br>
+                                         <input type="text" placeholder="" name="" ng-model="insertData.rating">	
+                                    </p> 
+                                                             
+                                     <p><strong>Popularity</strong>
+                                        <br>
+                                         <input type="text" placeholder="" name="" ng-model="insertData.popularity">	
+                                    </p>
+                                    
+                                    <p><strong>Runtime</strong>
+                                        <br>
+                                         <input type="text" placeholder="" name="" ng-model="insertData.runtime">	
+                                    </p>
+                                    
+                                    <p><strong>Overview</strong>
+                                        <br>
+                                         <textarea placeholder="" name="" ng-model="insertData.overview">
+                                             
+                                         </textarea>	
+                                    </p>                     
+                                    <hr>
+                                    <p>
+                                        <input type="submit" ng-click="movieInsertData()" value="submit" name="">
+                                         <input type="reset" value="reset" name="">
+                                    </p>   
+                                   	                    
+			            </fieldset>
+			        </form>
+			</div>
+              
+
+            </div>
+            <!--modal-body --end here-->
+        </div>
+    </div>
+</div><!--join_login end here-->
+  

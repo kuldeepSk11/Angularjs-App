@@ -1,0 +1,100 @@
+
+///************** define all variable here 
+// images/url function
+$cal-images-url:"../../images";
+
+@function imagpathSet($urlSet){
+	@return url($cal-images-url + $urlSet);
+}
+
+// .gallery-bg-set01{
+// 	background: imagpathSet("/logo.jpg");
+// }
+
+// Partials start here//
+@import'utility';
+@import'brand-color';
+@import'typography';
+
+// extra modifires start here//
+@import'extra-utility';
+
+
+/************** basix css start here ***********************/
+*{margin:$margin-0;padding: $padding-0;}
+body{margin:$margin-0;padding: $padding-0;font-size:$font-size-14;background:$bg-white;line-height:$text-line-height-18;}
+
+%mar-padd_0px{margin:$margin-0;padding: $padding-0;}
+
+//mixin function it is use to reuse again and again 
+@mixin position_set($position_set){
+    position: $position_set;
+    @content;
+    }
+
+@mixin left_set($left_set){
+    left:$left_set;
+    @content;
+    }
+
+@mixin right_set($right_set){
+    right: $right_set;
+    @content;
+    }
+
+@mixin top_set($top_set){
+    top: $top_set;
+    @content;
+    }
+
+@mixin bottom_set($bottom_set){
+    bottom: $bottom_set;
+    @content;
+    }
+
+@mixin width_height_set($width,$height){
+    width: $width;
+    height: $height;
+    @content;
+    }
+
+
+@mixin width_set($width-set){
+    width: $width-set;
+    @content;
+    }
+
+
+@mixin mar_pad_set($margin,$padding){
+    margin:$margin;
+    padding: $padding;
+    @content;
+    }
+
+@mixin opacity_set($opacity){
+    opacity:$opacity;
+    @content;
+    }
+
+@mixin z-index_set($index) {
+    z-index: $index;
+    @content;
+    }
+
+@mixin box-sizing($box-sizing-set) {
+    -webkit-box-sizing: $box-sizing-set;
+        -ms-box-sizing: $box-sizing-set;
+            box-sizing: $box-sizing-set;
+  }
+
+  
+  
+
+/************** partials css start here ***********************/
+// other page import start here//
+@import'header';
+@import'footer';
+@import'sheroes-team';
+
+
+/************** all css start here ***********************/

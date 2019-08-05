@@ -1,0 +1,78 @@
+<div class="clearfix"></div>
+       <br>
+       <br> 
+   <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="well well-sm card">
+                <form method="post" action="sendmail.php">
+                    <fieldset>
+                        <legend class="text-xs-center header">Contact us</legend>
+                        <br>
+                        <br>
+                        <div class="col-md-10">
+                         <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" id="yourname" name="yourname" value="yourname" placeholder="Your Name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-envelope text-phone"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" id="phone" name="phone" value="987345567" placeholder="phone" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                                        </div>
+                                        <input type="email" value="kuldeep@sheroes.in" class="form-control" id="nombre" name="email" placeholder="exmple@gmail.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                                        </div>
+                                        <textarea rows="4" name="message" class="form-control" placeholder="Enter your massage for us here. We will get back to you within 2 business days."></textarea>
+                                    </div>
+                                </div>
+                   </div><!-- col-md-10 end here-->
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-xs-center">
+                                <input type="submit" id="fromMailSubmit" class="btn btn-primary btn-lg" value="Submit" name="Submit">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div>
+                <div class="card">
+                    <div class="text-xs-center header">Our Office</div>
+                    <div class="card-block text-center">
+                        <h4>Address</h4>
+                        <div>
+                        2217 Washington Blvd<br />
+                        #(703) 1234 1234<br />
+                        service@company.com<br />
+                        </div>
+                        <hr />
+                        <div id="map1" class="map">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

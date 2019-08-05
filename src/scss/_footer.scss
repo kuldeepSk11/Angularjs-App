@@ -1,0 +1,67 @@
+
+/***************new footer css start here***********************/
+.footer-bg-main{
+    background:$bg-white;
+    @include mar_pad_set($margin:10px 0px 0px 0px,$padding:30px 0px 10px 0px);
+   }
+.fot-head-tex{
+    font-size: $font-size-15;
+    font-weight: $font-weight-600;
+    color: $greyshade-600;
+    @include mar_pad_set($margin:10px 0px,$padding:0px);
+  }
+.fot-detail-list{
+    font-size: $font-size-14;
+    font-weight: $font-weight-600;
+    line-height: $text-line-height-23;
+    color:$greyshade-700;
+    @include mar_pad_set($margin:0px 0px 10px 0px,$padding:0px);
+   }
+.fot-copy-rt-text{
+    font-size: $font-size-14;
+    color: $greyshade-700;
+    margin:$margin-0;
+    padding: $padding-0;}
+.fot-copy-rt-text a{color: $primary-color;}
+.fot-copy-rt-text a:hover{
+    color: $primary-color;
+    text-decoration: $text-decoration-under!important;}
+.fot-nav-main-box{
+    float: $float-right;
+    @include mar_pad_set($margin:0px 30px 0px 0px,$padding:0px);
+    @include width_set($width-set:100%);
+    }
+.fot-nav-main-box ul{
+    float: $float-left;
+    @include mar_pad_set($margin:0px 0px,$padding:0px 0 0 70px);
+    @include width_set($width-set:33.3%);
+    border-left:$border-grey}
+.fot-nav-main-box ul:first-child{border-left:none;}
+.fot-nav-main-box ul li{
+    float: $float-left;
+    @include mar_pad_set($margin:0px 0px 16px 0px,$padding:0px);
+    @include width_set($width-set:100%);
+    display: $display-in-block;
+    font-size: $font-size-14;
+    color: $greyshade-600;
+    font-weight: $font-weight-400;
+   }
+.fot-nav-main-box ul li:last-child{margin:$margin-0;}
+.fot-nav-main-box ul li a:hover{
+    text-decoration: $text-decoration-under!important;
+    color:$primary-color;}
+.fot-scial-box{margin: $margin-0;padding: $padding-0;}
+.fot-scial-box ul{list-style: none;
+    @include mar_pad_set($margin:5px 0px,$padding:0px);
+   }
+.fot-scial-box ul li{display: $display-in-block;
+    @include mar_pad_set($margin:4px 27px 0px 0px,$padding:0px);
+   }
+.fot-scial-box ul li:last-child{margin:$margin-0;}
+.fot-logo-sett{
+    @include mar_pad_set($margin: 0px 0px 10px 0px,$padding:0px);
+   }
+.fot-app-img{
+    @include mar_pad_set($margin:10px 0px 20px 0px,$padding:0px);
+   }
+/***************new footer css end here***********************/

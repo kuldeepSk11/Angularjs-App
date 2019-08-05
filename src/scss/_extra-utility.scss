@@ -1,0 +1,57 @@
+
+/********** extra modifires ********/
+
+
+//width modifire
+@for $width-set from 1 through 10{
+    .width-set-#{$width-set}{ //interpulation    
+        width:10% * $width-set}
+}
+
+//margin top modifire
+@for $mar-top from 1 through 5{
+.mar-top-#{$mar-top}{ //interpulation    
+    margin-top:4px * $mar-top}
+}
+
+//margin left modifire
+@for $mar-left from 1 through 5{
+    .mar-left-#{$mar-left}{ //interpulation    
+        margin-left:4px * $mar-left}
+}
+
+//margin right modifire
+@for $mar-right from 1 through 5{
+    .mar-right-#{$mar-right}{ //interpulation    
+        margin-right:4px * $mar-right}
+}
+
+//margin bottom modifire
+@for $mar-bottom from 1 through 5{
+    .mar-bottom-#{$mar-bottom}{ //interpulation    
+        margin-bottom:4px * $mar-bottom}
+}
+
+//padding top modifire
+@for $pad-top from 1 through 5{
+    .padd-top-#{$pad-top}{ //interpulation    
+        padding-top:4px * $pad-top}
+    }
+    
+//margin left modifire
+@for $pad-left from 1 through 5{ 
+    .padd-left-#{$pad-left}{ //interpulation    
+        padding-left:4px * $pad-left}
+}
+
+//margin right modifire
+@for $pad-right from 1 through 5{
+    .padd-left-#{$pad-right}{ //interpulation    
+        padding-right:4px * $pad-right}
+}
+
+//margin bottom modifire
+@for $pad-bottom from 1 through 5{
+    .padd-bottom-#{$pad-bottom}{ //interpulation    
+        padding-bottom:4px * $pad-bottom}
+}

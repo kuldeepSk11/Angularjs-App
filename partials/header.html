@@ -1,0 +1,72 @@
+<header class="top-head-sec">
+   
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" ui-sref="home">FunTime</a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+       <a class="nav-link" ui-sref="home" >Home <span class="sr-only">(current)</span></a>
+      </li>
+     <li class="nav-item mr-3">
+            <a class="nav-link" ui-sref="popular" >Popular</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" ui-sref="upcoming">Upcoming</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" ui-sref="topRated">Top Rated</a>
+          </li>
+          <li class="nav-item dropdown mr-3">
+            <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Category
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" ui-sref="hollywood">Hollywood</a>
+              <a class="dropdown-item" ui-sref="bollywood">Bollywood</a>
+              <a class="dropdown-item" ui-sref="animation">Animation</a>
+              <a class="dropdown-item" ui-sref="southMovie">South Movie</a>
+            </div>
+          </li>
+           <li class="nav-item mr-3">
+            <a class="nav-link" ui-sref="contact">Contact us</a>
+          </li>
+          
+    </ul>  
+  </div>
+  
+  <div class="userLoginbtn-box" ng-cloak ng-controller="loginController">
+  
+  <button class="btn btn-primary blue_btn_join_01" type="submit"
+    data-toggle="modal" ng-click="loginOpenForm()" data-target="#join_login">login</button>
+    <login-Modal>{{modalbox}}</login-Modal>
+   </div><!--userLoginbtn-box end here-->
+    
+    <div class="profile-login-user pull-right" ng-show="whenUserLogin">
+        <ul class="nav pull-right">
+            <li class="dropdown">
+                <a class="nav-link dropdown-toggle"  id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Welcome, User <b class="caret"></b>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="userDropdown">
+
+                    <a class="dropdown-item" ui-sref="userProfile">
+                        <i class="icon-cog"></i> Profile
+                    </a>
+                    <a class="dropdown-item" ui-sref="userdashboad">
+                        <i class="icon-cog"></i> Dashboad
+                    </a> 
+                    <a class="dropdown-item" ui-sref="userLogout">
+                        <i class="icon-off"></i> Logout
+                    </a>
+                </div><!--dropdown-menu end here-->
+            </li>
+        </ul>
+    </div><!--profile-login-user end here-->
+              
+  </div><!--container end here-->
+</nav><!--navbar end here-->
+</header><!--top-head-sec endhere-->
